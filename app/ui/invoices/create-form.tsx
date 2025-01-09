@@ -18,6 +18,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             Choose customer
           </label>
           <div className="relative">
+            <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
             <select
               id="customer"
               name="customerId"
@@ -33,7 +34,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 </option>
               ))}
             </select>
-            <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
           </div>
         </div>
 
@@ -74,7 +74,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 />
                 <label
                   htmlFor="pending"
-                  className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
+                  className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-200 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   Pending <ClockIcon className="h-4 w-4" />
                 </label>
