@@ -1,6 +1,6 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
 
-export const experimentatl_ppr = true;
+export const experimental_ppr = true;
 
 export default function DashboardLayout({
     children,
